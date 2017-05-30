@@ -1,6 +1,6 @@
 #' Compute the closedness
 #'
-#' This function calculates the dissimilarity between CDFS for junctions 
+#' This function calculates the dissimilarity between CDFs for junctions
 #' @param cluster cluster
 #' @export
 #' @examples
@@ -11,4 +11,4 @@ closedness <- function(cluster) {
   result <- mean(neighbours%in%cluster)
   #  attr(result,"neighbours") <- length(neighbours)
   result
-} 
+}

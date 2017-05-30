@@ -10,7 +10,7 @@ closedness(cluster)
 \item{cluster}{cluster}
 }
 \description{
-This function calculates the dissimilarity between CDFS for junctions
+This function calculates the dissimilarity between CDFs for junctions
 }
 \examples{
 closedness()
