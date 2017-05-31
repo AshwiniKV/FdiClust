@@ -1,5 +1,4 @@
-setwd("C:\\Users\\user\\ownCloud\\Shared\\Ashwini PhD")
-setwd("./SF_Network/Data/")
+#setwd("./SF_Network/Data/")
 occupancy<-read.csv("NewClusterData/Occupancy2.csv", header = FALSE)
 
 # Origin - Destination
