@@ -5,12 +5,13 @@
 #' @param times Number of observations
 #' @param t0 Time points recorded corresponding to relevant sampling rate
 #' @param x0 Vector of quantiles
+#' @param adjacency Adjacency matrix
 #' @param type CDF calculated with functional only (type = 2), distributional only (type = 1) and both functional and distributional (type = 3)
-#' @export
+#' @import stats
 #' @examples
 #' cdf_junction()
 #' 
-cdf_junction<-function(dataset, sd.x, sd.t, times, t0, x0, type){
+cdf_junction<-function(dataset, sd.x, sd.t, times, t0, x0, adjacency, type){
 if(type == 1 | type == 2| type == 3){
   if(type == 1){
   dataset<-matrix(rep(colMeans(dataset), each = nrow(dataset)), nrow = nrow(dataset))

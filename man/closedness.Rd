@@ -4,10 +4,12 @@
 \alias{closedness}
 \title{Compute the closedness}
 \usage{
-closedness(cluster)
+closedness(cluster, adjacency)
 }
 \arguments{
 \item{cluster}{cluster}
+
+\item{adjacency}{Adjacency matrix}
 }
 \description{
 This function calculates the dissimilarity between CDFs for junctions

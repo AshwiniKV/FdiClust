@@ -4,7 +4,7 @@
 \alias{cdf_junction}
 \title{Cumulative distribution function for each junction}
 \usage{
-cdf_junction(dataset, sd.x, sd.t, times, t0, x0, type)
+cdf_junction(dataset, sd.x, sd.t, times, t0, x0, adjacency, type)
 }
 \arguments{
 \item{dataset}{Data for incoming links over the entire junction}
@@ -18,6 +18,8 @@ cdf_junction(dataset, sd.x, sd.t, times, t0, x0, type)
 \item{t0}{Time points recorded corresponding to relevant sampling rate}
 
 \item{x0}{Vector of quantiles}
+
+\item{adjacency}{Adjacency matrix}
 
 \item{type}{CDF calculated with functional only (type = 2), distributional only (type = 1) and both functional and distributional (type = 3)}
 }
